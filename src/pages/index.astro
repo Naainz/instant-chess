@@ -1,6 +1,5 @@
 ---
-import Chessboard from "../components/Chessboard.jsx";
-import GameSidebar from "../components/GameSidebar.jsx";
+import ChessGame from '../components/ChessGame';
 ---
 
 <html lang="en">
@@ -10,16 +9,6 @@ import GameSidebar from "../components/GameSidebar.jsx";
   </head>
 
   <body class="min-h-screen bg-gray-900 text-gray-200">
-    <div class="flex flex-col md:flex-row h-screen w-full">
-      <div class="w-full md:w-7/12 flex items-center justify-center p-4 bg-gray-800">
-        <div class="w-full max-w-[min(80vh,calc(100vw-2rem))] aspect-square">
-          <Chessboard />
-        </div>
-      </div>
-
-      <div class="w-full md:w-5/12 bg-gray-900 border-t md:border-l border-gray-700 overflow-hidden">
-        <GameSidebar client:load />
-      </div>
-    </div>
+    <ChessGame client:load />
   </body>
 </html>
